@@ -1,0 +1,112 @@
+
+
+@keyframes slide{
+    0%{
+border-radius: 0%;
+transform: rotate(90deg);
+    }
+    20%{
+        border-radius: 30%;
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
+        transform: rotate(50%);
+        transform: rotate(180deg);
+            }
+    40%{
+        border-radius: 60%;
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
+        transform: rotate(270deg);
+            }
+    
+    60%{
+        border-radius: 100%;
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
+        transform: rotate(360deg);
+    }
+    
+80%{
+    border-radius: 40%;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,120,1) 35%, rgba(0,212,255,1) 100%);
+    transform: rotate(270deg);
+}
+
+95%{
+    border-radius: 20%;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,120,1) 35%, rgba(0,212,255,1) 100%);
+    transform: rotate(120deg);
+}
+
+
+100%{
+    border-radius: 0%;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,120,1) 35%, rgba(0,212,255,1) 100%);
+}
+}
+
+@keyframes circle {
+   0%{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,121,106,1) 35%, rgba(0,212,255,1) 100%);
+   } 
+   25%{
+    ackground: rgb(18,0,36);
+    background: linear-gradient(0deg, rgba(18,0,36,0.4586466165413534) 0%, rgba(9,121,41,1) 35%, rgba(255,244,0,1) 100%);
+   }
+   45%{
+    background: linear-gradient(294deg, rgba(18,0,36,0.4586466165413534) 0%, rgba(9,121,41,1) 35%, rgba(0,42,255,1) 100%);
+   }
+   65%{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(66,121,9,1) 35%, rgba(0,212,255,1) 100%);
+    
+   }
+   85%{
+    background: rgb(18,0,36);
+background: linear-gradient(74deg, rgba(18,0,36,0.4586466165413534) 0%, rgba(9,121,41,1) 35%, rgba(0,242,255,1) 100%);
+   }
+   100%{
+    background: linear-gradient(173deg, rgba(18,0,36,0.4586466165413534) 0%, rgba(9,121,41,1) 35%, rgba(255,0,143,1) 100%);
+   }
+}
+
+
+body{
+    box-sizing: border-box;
+   background: #000;
+/*    
+   
+   border: 1px solid red; */
+}
+.circle{
+    /* border-radius: 100%; */
+    /* padding: 100px; */
+   /* margin: 20px; */
+    background: #9491f2;
+    /* padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 100%;
+    animation:circle 2s infinite;
+    
+}
+.circleToSquare{
+    margin: 15px;
+    /* margin: 25% auto; */
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,120,1) 35%, rgba(0,212,255,1) 100%);
+    transition: background 0.8s ease, transform 0.5s;
+    animation:slide 5s infinite;
+
+}
+
+
+/* .circleToSquare:hover,
+.circleToSquare:focus{
+animation:slide 5s infinite;
+} */
+/* timing-function delay iteration-count direction fill-mode; */
+
+
+
+
+
+
